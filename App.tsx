@@ -21,11 +21,11 @@ export default function Counter() {
   return (
     <div>
       <h1>{clicks}</h1>
-      <h2>Time left: {timeLeft}seconds</h2>
+      <h2>Time left: {timeLeft} seconds</h2>
       {timeLeft > 0 && (
         <button onClick={() => setClicks((prev) => prev + 1)}>+</button>
       )}
-      {console.log(timer.current)}
+      <button>Stop</button>
     </div>
   );
 }
